@@ -1,11 +1,34 @@
 上传：
 1.cd 本地库
 2.git add .        
-   git add *
-  git add 文件名
+  或git add *
+  或git add 文件名
 3.git commit -m "备注"
 4.git push -u origin master
-i
+
 下载：
 git clone https://github.com/xxx/xxx.git
 git pull <本地仓库> master 
+
+更新
+$ git pull origin master
+
+关联远程与本地库：
+1.git config --global user.name "你的名字或昵称"
+2.git config --global user.email "你的邮箱"
+3.git init
+4.git remote add origin <你的项目地址> //注:项目地址形式为:https://gitee.com/xxx/xxx.git或者 git@gitee.com:xxx/xxx.git
+
+
+
+$ git remote add origin git@github.com:gxm-hub/ros_study.git
+
+
+
+从远程服务器克隆一个一模一样的版本库到本地,复制的是整个版本库，叫做clone.（clone是将一个库复制到你的本地，是一个本地从无到有的过程）
+从远程服务器获取到一个branch分支的更新到本地，并更新本地库，叫做pull.（pull是指同步一个在你本地有版本的库内容更新的部分到你的本地库）
+
+
+
+
+
